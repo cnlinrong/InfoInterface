@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">咨询</string>
+    <string name="action_settings">设置</string>
+    
+    <string name="go_info">进入咨询广场</string>
+    <string name="key_word">请输入关键词</string>
+    <string name="btn_search">搜索</string>
+    
+    <string name="btn_publish">我要发布</string>
+
+    <string-array name="type_list">
+        <item>咨询类型</item>
+        <item>娱乐</item>
+        <item>军事</item>
+        <item>游戏</item>
+    </string-array>
+    
+    <string-array name="area_choose">
+        <item>地区选择</item>
+        <item>福州</item>
+        <item>厦门</item>
+        <item>杭州</item>
+    </string-array>
+    
+</resources>
