@@ -2,40 +2,29 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:orientation="vertical" >
+
+    <SearchView
+        android:id="@+id/search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:iconifiedByDefault="false"
+        android:inputType="textFilter"
+        android:queryHint="@string/key_word"
+        android:focusable="false" />
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" >
-
-        <EditText 
-            android:id="@+id/key_word"
-            android:layout_width="0px"
-            android:layout_weight="3"
-            android:layout_height="match_parent"
-            android:hint="@string/key_word"/>
-        
-        <Button 
-            android:id="@+id/btn_search"
-            android:layout_width="0px"
-            android:layout_weight="1"
-            android:layout_height="match_parent"
-            android:text="@string/btn_search"/>
-        
-    </LinearLayout>
-
-    <LinearLayout 
-        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:baselineAligned="false">
+        android:baselineAligned="false"
+        android:orientation="horizontal" >
 
         <Spinner
             android:id="@+id/type_list"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1" />
-        
+
         <Spinner
             android:id="@+id/area_choose"
             android:layout_width="wrap_content"
@@ -43,12 +32,35 @@
             android:layout_weight="1" />
         
     </LinearLayout>
-    
-    <ListView
-        android:id="@+id/info_list"
+
+    <FrameLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:dividerHeight="@dimen/list_divider_height"
-        android:divider="@color/divider_color" />
-    
+        android:layout_height="match_parent" >
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center" />
+
+        <ListView
+            android:id="@+id/info_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@color/divider_color"
+            android:dividerHeight="@dimen/list_divider_height"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/empty"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/empty_list"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:visibility="gone" />
+        
+    </FrameLayout>
+
 </LinearLayout>

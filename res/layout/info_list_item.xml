@@ -14,27 +14,36 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentLeft="true"
-            android:text="日期" />
+            android:text="2015年4月6日 17:30" />
 
         <TextView
             android:id="@+id/text2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentRight="true"
-            android:text="待处理" />
+            android:text="已评价"
+            android:textColor="@android:color/holo_blue_light" />
         
     </RelativeLayout>
 
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#CCCCCC"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp" />
+    
     <TextView
         android:id="@+id/text3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="描述" />
+        android:text="公司解散 | 公开咨询"
+        android:layout_marginBottom="5dp" />
 
     <TextView
         android:id="@+id/text4"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="详细" />
+        android:text="公司亏损，发不起工资，申请破产，老板找不到..." />
 
 </LinearLayout>

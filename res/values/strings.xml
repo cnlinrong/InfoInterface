@@ -3,25 +3,42 @@
 
     <string name="app_name">咨询</string>
     <string name="action_settings">设置</string>
+    <string name="action_exit">退出</string>
     
     <string name="go_info">进入咨询广场</string>
     <string name="key_word">请输入关键词</string>
     <string name="btn_search">搜索</string>
     
     <string name="btn_publish">我要发布</string>
+    <string name="btn_refresh">刷新</string>
+    <string name="btn_about">关于</string>
 
     <string-array name="type_list">
         <item>咨询类型</item>
-        <item>娱乐</item>
-        <item>军事</item>
-        <item>游戏</item>
+        <item>行政复议</item>
+        <item>取保候审</item>
+        <item>拆迁安置</item>
+        <item>工程建筑</item>
+        <item>医疗纠纷</item>
+        <item>交通事故</item>
+        <item>拆迁安置</item>
+        <item>涉外仲裁</item>
+        <item>海事海商</item>
     </string-array>
     
     <string-array name="area_choose">
         <item>地区选择</item>
-        <item>福州</item>
-        <item>厦门</item>
-        <item>杭州</item>
+        <item>北京市</item>
+        <item>福州市</item>
+        <item>厦门市</item>
+        <item>杭州市</item>
+        <item>广州市</item>
+        <item>鞍山市</item>
+        <item>慈溪市</item>
+        <item>东莞市</item>
+        <item>安丘市</item>
     </string-array>
+    
+    <string name="empty_list">未查询到任何咨询信息</string>
     
 </resources>
